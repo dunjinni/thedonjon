@@ -1,0 +1,36 @@
+<!-- yo shoutout stack overflow for saving my dumbass LOL !-->
+
+<html>
+<head>
+<title>...</title>
+<script type="text/javascript">
+  var imageURLs = [
+       "http://thedonjon.cc/shit/1.jpg"
+     , "http://thedonjon.cc/shit/2.jpg"
+     , "http://thedonjon.cc/shit/3.jpg"
+	 , "http://thedonjon.cc/shit/4.jpg"
+  ];
+  function getImageTag() {
+    var img = '<a href = "http://thedonjon.cc/welcome.html"><img src=\"';
+    var randomIndex = Math.floor(Math.random() * imageURLs.length);
+    img += imageURLs[randomIndex];
+    img += '\" alt=\"fucko bingo bongo kill YS\"/></a>';
+    return img;
+  }
+</script>
+<style>
+img {
+    display: block;
+	margin-bottom: auto;
+	margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+</style>
+</head>
+<body>
+<script type="text/javascript">
+  document.write(getImageTag());
+</script>
+</body>
+</html>
